@@ -2,21 +2,21 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import OverviewPage from './pages/OverviewPage';
-import AccountsPage from './pages/AccountsPage';
-import TransactionsPage from './pages/TransactionsPage';
+import AccountPage from './pages/AccountPage';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
         <Header />
+        <main>
           <Route path="/" component={OverviewPage} exact />
-          <Route path="/accounts" component={AccountsPage} />
-          <Route path="/transactions" component={TransactionsPage} />
+          <Route path="/accounts/:name" component={AccountPage} />
+        </main>
         <Footer />
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

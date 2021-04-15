@@ -1,14 +1,37 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 10vw;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-color: slategray;
   height: 30px;
   position: sticky;
   width: 100vw;
   margin: 0;
+  padding: 0 15px;
+}
+
+header h3 {
+  margin: 0;
   padding: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  color: white;
+  background-color: black;
 }
 
 nav ul {
@@ -22,14 +45,9 @@ nav ul li {
   padding: 5px 0;
 }
 
-nav a {
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover {
-  background-color: black;
-  color: white;
+.card {
+  border: 1px solid black;
+  margin-bottom: 15px;
 }
 
 footer {
