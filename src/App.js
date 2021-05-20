@@ -12,7 +12,7 @@ function App() {
         <Header />
         <main>
           <Route path="/" component={OverviewPage} exact />
-          <Route path="/accounts/:name" component={AccountPage} />
+          <Route path="/accounts/:name" component={AccountPage} exact />
         </main>
         <Footer />
       </div>
